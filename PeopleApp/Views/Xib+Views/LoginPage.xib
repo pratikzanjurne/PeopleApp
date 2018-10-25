@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginPage" customModule="PeopleApp" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="189-jX-R2J" id="X92-Oe-ggE"/>
+                <outlet property="loginBtn" destination="88a-QS-iFu" id="ASm-9k-qel"/>
+                <outlet property="textField" destination="ar3-b9-eSR" id="NXd-21-ucZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="189-jX-R2J">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="545"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kk3-zc-Hx3">
+                    <rect key="frame" x="131.5" y="62" width="159" height="159"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="kk3-zc-Hx3" secondAttribute="height" multiplier="1:1" id="p5n-e6-fnI"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter  your e-mail Id " textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ar3-b9-eSR">
+                    <rect key="frame" x="41.5" y="294" width="357.5" height="39.5"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88a-QS-iFu">
+                    <rect key="frame" x="40.5" y="366" width="359" height="58.5"/>
+                    <color key="backgroundColor" red="0.41960784313725491" green="0.21176470588235294" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="LOGIN">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="88a-QS-iFu" firstAttribute="trailing" secondItem="PQU-hS-cLf" secondAttribute="trailing" multiplier="250.86:265.07" id="9oE-aU-O9g"/>
+                <constraint firstItem="kk3-zc-Hx3" firstAttribute="top" secondItem="PQU-hS-cLf" secondAttribute="bottom" multiplier="38.13:335" id="BO1-JJ-sQg"/>
+                <constraint firstItem="kk3-zc-Hx3" firstAttribute="centerX" secondItem="189-jX-R2J" secondAttribute="centerX" id="Lw7-2m-Bcy"/>
+                <constraint firstItem="88a-QS-iFu" firstAttribute="top" secondItem="PQU-hS-cLf" secondAttribute="bottom" multiplier="225:335" id="UgV-Cs-Fmj"/>
+                <constraint firstItem="ar3-b9-eSR" firstAttribute="trailing" secondItem="PQU-hS-cLf" secondAttribute="trailing" multiplier="250.46:265" id="WcQ-qv-MeS"/>
+                <constraint firstItem="ar3-b9-eSR" firstAttribute="top" secondItem="PQU-hS-cLf" secondAttribute="bottom" multiplier="180.68:335" id="YQe-UN-kqR"/>
+                <constraint firstItem="kk3-zc-Hx3" firstAttribute="bottom" secondItem="PQU-hS-cLf" secondAttribute="bottom" multiplier="135.7:335" id="Yi1-ge-Z20"/>
+                <constraint firstItem="ar3-b9-eSR" firstAttribute="leading" secondItem="PQU-hS-cLf" secondAttribute="trailing" multiplier="26.11:265.07" id="dRA-BI-aW6"/>
+                <constraint firstItem="88a-QS-iFu" firstAttribute="leading" secondItem="PQU-hS-cLf" secondAttribute="trailing" multiplier="25.52:265.07" id="dXF-4e-FlF"/>
+                <constraint firstItem="ar3-b9-eSR" firstAttribute="bottom" secondItem="PQU-hS-cLf" secondAttribute="bottom" multiplier="205:335" id="eI4-ik-cDc"/>
+                <constraint firstItem="88a-QS-iFu" firstAttribute="bottom" secondItem="PQU-hS-cLf" secondAttribute="bottom" multiplier="260.84:335" id="qUd-zX-r0R"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="PQU-hS-cLf"/>
+            <point key="canvasLocation" x="479" y="-258.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="user_image" width="451" height="451"/>
+    </resources>
+</document>

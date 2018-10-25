@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A201E6E217080770091F5E0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A201E6D217080770091F5E0 /* UIColor+Extension.swift */; };
+		0A201E70217087430091F5E0 /* JobPostCollectionViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A201E6F217087430091F5E0 /* JobPostCollectionViewController+Extension.swift */; };
+		0A201E722170C14E0091F5E0 /* JobPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A201E712170C14E0091F5E0 /* JobPostCollectionViewCell.swift */; };
+		0A201E742170C16C0091F5E0 /* JobPostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A201E732170C16C0091F5E0 /* JobPostCollectionViewCell.xib */; };
+		0A8F0AF021745A5E00A5D497 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F0AEF21745A5E00A5D497 /* Constants.swift */; };
+		0A8F0AF3217496CF00A5D497 /* JobPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F0AF2217496CF00A5D497 /* JobPostModel.swift */; };
+		0A93101B2175D10000EFDC37 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93101A2175D10000EFDC37 /* DBManager.swift */; };
+		0A93101C2175D25600EFDC37 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A93101D2175D25600EFDC37 /* Alamofire.framework */; };
+		0A97154B217DFEB100980066 /* HiringJobPostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A97154A217DFEB100980066 /* HiringJobPostDataModel.swift */; };
+		0AD93B79217EF5DB00D916D3 /* LoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD93B78217EF5DB00D916D3 /* LoadingCollectionViewCell.swift */; };
+		0AD93B7B217EF6DA00D916D3 /* LoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD93B7A217EF6DA00D916D3 /* LoadingCollectionViewCell.xib */; };
+		0ADB0DE6216F30B600F33221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB0DE5216F30B600F33221 /* AppDelegate.swift */; };
+		0ADB0DE8216F30B600F33221 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB0DE7216F30B600F33221 /* LoginViewController.swift */; };
+		0ADB0DEB216F30B600F33221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADB0DE9216F30B600F33221 /* Main.storyboard */; };
+		0ADB0DEE216F30B600F33221 /* PeopleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB0DEC216F30B600F33221 /* PeopleApp.xcdatamodeld */; };
+		0ADB0DF0216F30B600F33221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADB0DEF216F30B600F33221 /* Assets.xcassets */; };
+		0ADB0DF3216F30B600F33221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADB0DF1216F30B600F33221 /* LaunchScreen.storyboard */; };
+		0ADB0DFE216F30B600F33221 /* PeopleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB0DFD216F30B600F33221 /* PeopleAppTests.swift */; };
+		0ADB0E09216F30B700F33221 /* PeopleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB0E08216F30B700F33221 /* PeopleAppUITests.swift */; };
+		0ADB0E1A216F311200F33221 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB0E19216F311200F33221 /* UIHelper.swift */; };
+		0ADB0E1C216F52C500F33221 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB0E1B216F52C500F33221 /* LoginPage.swift */; };
+		0ADB0E1E216F52DF00F33221 /* LoginPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ADB0E1D216F52DF00F33221 /* LoginPage.xib */; };
+		0ADB0E20216F878400F33221 /* JobPostCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB0E1F216F878400F33221 /* JobPostCollectionViewController.swift */; };
+		0ADDE0102180815B009F855B /* AddJobPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDE00F2180815B009F855B /* AddJobPostViewController.swift */; };
+		0AE00E0E2175B4A3004A00FF /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00DFA2175B4A3004A00FF /* Lato-Black.ttf */; };
+		0AE00E0F2175B4A3004A00FF /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00DFB2175B4A3004A00FF /* Lato-BlackItalic.ttf */; };
+		0AE00E102175B4A3004A00FF /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00DFC2175B4A3004A00FF /* Lato-Bold.ttf */; };
+		0AE00E112175B4A3004A00FF /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00DFD2175B4A3004A00FF /* Lato-BoldItalic.ttf */; };
+		0AE00E122175B4A3004A00FF /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00DFE2175B4A3004A00FF /* Lato-Hairline.ttf */; };
+		0AE00E132175B4A3004A00FF /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00DFF2175B4A3004A00FF /* Lato-HairlineItalic.ttf */; };
+		0AE00E142175B4A3004A00FF /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E002175B4A3004A00FF /* Lato-Heavy.ttf */; };
+		0AE00E152175B4A3004A00FF /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E012175B4A3004A00FF /* Lato-HeavyItalic.ttf */; };
+		0AE00E162175B4A3004A00FF /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E022175B4A3004A00FF /* Lato-Italic.ttf */; };
+		0AE00E172175B4A3004A00FF /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E032175B4A3004A00FF /* Lato-Light.ttf */; };
+		0AE00E182175B4A3004A00FF /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E042175B4A3004A00FF /* Lato-LightItalic.ttf */; };
+		0AE00E192175B4A3004A00FF /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E052175B4A3004A00FF /* Lato-Medium.ttf */; };
+		0AE00E1A2175B4A3004A00FF /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E062175B4A3004A00FF /* Lato-MediumItalic.ttf */; };
+		0AE00E1B2175B4A3004A00FF /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E072175B4A3004A00FF /* Lato-Regular.ttf */; };
+		0AE00E1C2175B4A3004A00FF /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E082175B4A3004A00FF /* Lato-Semibold.ttf */; };
+		0AE00E1D2175B4A3004A00FF /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E092175B4A3004A00FF /* Lato-SemiboldItalic.ttf */; };
+		0AE00E1E2175B4A3004A00FF /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E0A2175B4A3004A00FF /* Lato-Thin.ttf */; };
+		0AE00E1F2175B4A3004A00FF /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E0B2175B4A3004A00FF /* Lato-ThinItalic.ttf */; };
+		0AE00E202175B4A3004A00FF /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E0C2175B4A3004A00FF /* OFL.txt */; };
+		0AE00E212175B4A3004A00FF /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AE00E0D2175B4A3004A00FF /* README.txt */; };
+		DD4684D9D286DAF0DCA742F0 /* Pods_PeopleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B174834D0C77F753A207CC61 /* Pods_PeopleApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ADB0DFA216F30B600F33221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ADB0DDA216F30B600F33221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ADB0DE1216F30B600F33221;
+			remoteInfo = PeopleApp;
+		};
+		0ADB0E05216F30B700F33221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ADB0DDA216F30B600F33221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ADB0DE1216F30B600F33221;
+			remoteInfo = PeopleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A201E6D217080770091F5E0 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0A201E6F217087430091F5E0 /* JobPostCollectionViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JobPostCollectionViewController+Extension.swift"; sourceTree = "<group>"; };
+		0A201E712170C14E0091F5E0 /* JobPostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobPostCollectionViewCell.swift; sourceTree = "<group>"; };
+		0A201E732170C16C0091F5E0 /* JobPostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobPostCollectionViewCell.xib; sourceTree = "<group>"; };
+		0A8F0AEF21745A5E00A5D497 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0A8F0AF2217496CF00A5D497 /* JobPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobPostModel.swift; sourceTree = "<group>"; };
+		0A93101A2175D10000EFDC37 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		0A93101D2175D25600EFDC37 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A97154A217DFEB100980066 /* HiringJobPostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiringJobPostDataModel.swift; sourceTree = "<group>"; };
+		0AD93B78217EF5DB00D916D3 /* LoadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCollectionViewCell.swift; sourceTree = "<group>"; };
+		0AD93B7A217EF6DA00D916D3 /* LoadingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCollectionViewCell.xib; sourceTree = "<group>"; };
+		0ADB0DE2216F30B600F33221 /* PeopleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADB0DE5216F30B600F33221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0ADB0DE7216F30B600F33221 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0ADB0DEA216F30B600F33221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0ADB0DED216F30B600F33221 /* PeopleApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeopleApp.xcdatamodel; sourceTree = "<group>"; };
+		0ADB0DEF216F30B600F33221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ADB0DF2216F30B600F33221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0ADB0DF4216F30B600F33221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ADB0DF9216F30B600F33221 /* PeopleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADB0DFD216F30B600F33221 /* PeopleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAppTests.swift; sourceTree = "<group>"; };
+		0ADB0DFF216F30B600F33221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ADB0E04216F30B700F33221 /* PeopleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADB0E08216F30B700F33221 /* PeopleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAppUITests.swift; sourceTree = "<group>"; };
+		0ADB0E0A216F30B700F33221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ADB0E19216F311200F33221 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		0ADB0E1B216F52C500F33221 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		0ADB0E1D216F52DF00F33221 /* LoginPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginPage.xib; sourceTree = "<group>"; };
+		0ADB0E1F216F878400F33221 /* JobPostCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobPostCollectionViewController.swift; sourceTree = "<group>"; };
+		0ADDE00F2180815B009F855B /* AddJobPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJobPostViewController.swift; sourceTree = "<group>"; };
+		0AE00DFA2175B4A3004A00FF /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		0AE00DFB2175B4A3004A00FF /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		0AE00DFC2175B4A3004A00FF /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		0AE00DFD2175B4A3004A00FF /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0AE00DFE2175B4A3004A00FF /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		0AE00DFF2175B4A3004A00FF /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		0AE00E002175B4A3004A00FF /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		0AE00E012175B4A3004A00FF /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		0AE00E022175B4A3004A00FF /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		0AE00E032175B4A3004A00FF /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		0AE00E042175B4A3004A00FF /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		0AE00E052175B4A3004A00FF /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		0AE00E062175B4A3004A00FF /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0AE00E072175B4A3004A00FF /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		0AE00E082175B4A3004A00FF /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		0AE00E092175B4A3004A00FF /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		0AE00E0A2175B4A3004A00FF /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		0AE00E0B2175B4A3004A00FF /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		0AE00E0C2175B4A3004A00FF /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		0AE00E0D2175B4A3004A00FF /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		B174834D0C77F753A207CC61 /* Pods_PeopleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8977E1E36F5495737931DFF /* Pods-PeopleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleApp/Pods-PeopleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BEA670A70E02DD604334CDF9 /* Pods-PeopleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PeopleApp/Pods-PeopleApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ADB0DDF216F30B600F33221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A93101C2175D25600EFDC37 /* Alamofire.framework in Frameworks */,
+				DD4684D9D286DAF0DCA742F0 /* Pods_PeopleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADB0DF6216F30B600F33221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADB0E01216F30B600F33221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A201E6C2170800B0091F5E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A201E6D217080770091F5E0 /* UIColor+Extension.swift */,
+				0A201E6F217087430091F5E0 /* JobPostCollectionViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0A8F0AF1217496A400A5D497 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A8F0AF2217496CF00A5D497 /* JobPostModel.swift */,
+				0A97154A217DFEB100980066 /* HiringJobPostDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A9310182175D09700EFDC37 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0A9310192175D0B500EFDC37 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				0A93101A2175D10000EFDC37 /* DBManager.swift */,
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
+		0ADB0DD9216F30B600F33221 = {
+			isa = PBXGroup;
+			children = (
+				0ADB0DE4216F30B600F33221 /* PeopleApp */,
+				0AE00DF92175B4A3004A00FF /* Lato2OFL */,
+				0ADB0DFC216F30B600F33221 /* PeopleAppTests */,
+				0ADB0E07216F30B700F33221 /* PeopleAppUITests */,
+				0ADB0DE3216F30B600F33221 /* Products */,
+				FDB207D6523ACAC43E2F8298 /* Pods */,
+				5414EC79771B57C8879C8ACC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0ADB0DE3216F30B600F33221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB0DE2216F30B600F33221 /* PeopleApp.app */,
+				0ADB0DF9216F30B600F33221 /* PeopleAppTests.xctest */,
+				0ADB0E04216F30B700F33221 /* PeopleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0ADB0DE4216F30B600F33221 /* PeopleApp */ = {
+			isa = PBXGroup;
+			children = (
+				0A9310192175D0B500EFDC37 /* DBManager */,
+				0A9310182175D09700EFDC37 /* Services */,
+				0A8F0AF1217496A400A5D497 /* Model */,
+				0A201E6C2170800B0091F5E0 /* Extensions */,
+				0ADB0E17216F30CD00F33221 /* Views */,
+				0ADB0E16216F30C400F33221 /* Util */,
+				0ADB0DE5216F30B600F33221 /* AppDelegate.swift */,
+				0ADB0DE7216F30B600F33221 /* LoginViewController.swift */,
+				0ADB0DE9216F30B600F33221 /* Main.storyboard */,
+				0ADB0DEF216F30B600F33221 /* Assets.xcassets */,
+				0ADB0DF1216F30B600F33221 /* LaunchScreen.storyboard */,
+				0ADB0DF4216F30B600F33221 /* Info.plist */,
+				0ADB0DEC216F30B600F33221 /* PeopleApp.xcdatamodeld */,
+				0ADB0E1F216F878400F33221 /* JobPostCollectionViewController.swift */,
+				0ADDE00F2180815B009F855B /* AddJobPostViewController.swift */,
+			);
+			path = PeopleApp;
+			sourceTree = "<group>";
+		};
+		0ADB0DFC216F30B600F33221 /* PeopleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB0DFD216F30B600F33221 /* PeopleAppTests.swift */,
+				0ADB0DFF216F30B600F33221 /* Info.plist */,
+			);
+			path = PeopleAppTests;
+			sourceTree = "<group>";
+		};
+		0ADB0E07216F30B700F33221 /* PeopleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB0E08216F30B700F33221 /* PeopleAppUITests.swift */,
+				0ADB0E0A216F30B700F33221 /* Info.plist */,
+			);
+			path = PeopleAppUITests;
+			sourceTree = "<group>";
+		};
+		0ADB0E16216F30C400F33221 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB0E19216F311200F33221 /* UIHelper.swift */,
+				0A8F0AEF21745A5E00A5D497 /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0ADB0E17216F30CD00F33221 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB0E18216F30D700F33221 /* Xib+Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0ADB0E18216F30D700F33221 /* Xib+Views */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB0E1B216F52C500F33221 /* LoginPage.swift */,
+				0ADB0E1D216F52DF00F33221 /* LoginPage.xib */,
+				0A201E712170C14E0091F5E0 /* JobPostCollectionViewCell.swift */,
+				0A201E732170C16C0091F5E0 /* JobPostCollectionViewCell.xib */,
+				0AD93B78217EF5DB00D916D3 /* LoadingCollectionViewCell.swift */,
+				0AD93B7A217EF6DA00D916D3 /* LoadingCollectionViewCell.xib */,
+			);
+			path = "Xib+Views";
+			sourceTree = "<group>";
+		};
+		0AE00DF92175B4A3004A00FF /* Lato2OFL */ = {
+			isa = PBXGroup;
+			children = (
+				0AE00DFA2175B4A3004A00FF /* Lato-Black.ttf */,
+				0AE00DFB2175B4A3004A00FF /* Lato-BlackItalic.ttf */,
+				0AE00DFC2175B4A3004A00FF /* Lato-Bold.ttf */,
+				0AE00DFD2175B4A3004A00FF /* Lato-BoldItalic.ttf */,
+				0AE00DFE2175B4A3004A00FF /* Lato-Hairline.ttf */,
+				0AE00DFF2175B4A3004A00FF /* Lato-HairlineItalic.ttf */,
+				0AE00E002175B4A3004A00FF /* Lato-Heavy.ttf */,
+				0AE00E012175B4A3004A00FF /* Lato-HeavyItalic.ttf */,
+				0AE00E022175B4A3004A00FF /* Lato-Italic.ttf */,
+				0AE00E032175B4A3004A00FF /* Lato-Light.ttf */,
+				0AE00E042175B4A3004A00FF /* Lato-LightItalic.ttf */,
+				0AE00E052175B4A3004A00FF /* Lato-Medium.ttf */,
+				0AE00E062175B4A3004A00FF /* Lato-MediumItalic.ttf */,
+				0AE00E072175B4A3004A00FF /* Lato-Regular.ttf */,
+				0AE00E082175B4A3004A00FF /* Lato-Semibold.ttf */,
+				0AE00E092175B4A3004A00FF /* Lato-SemiboldItalic.ttf */,
+				0AE00E0A2175B4A3004A00FF /* Lato-Thin.ttf */,
+				0AE00E0B2175B4A3004A00FF /* Lato-ThinItalic.ttf */,
+				0AE00E0C2175B4A3004A00FF /* OFL.txt */,
+				0AE00E0D2175B4A3004A00FF /* README.txt */,
+			);
+			name = Lato2OFL;
+			path = "PeopleApp/Views/Xib+Views/Lato2OFL";
+			sourceTree = "<group>";
+		};
+		5414EC79771B57C8879C8ACC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A93101D2175D25600EFDC37 /* Alamofire.framework */,
+				B174834D0C77F753A207CC61 /* Pods_PeopleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDB207D6523ACAC43E2F8298 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8977E1E36F5495737931DFF /* Pods-PeopleApp.debug.xcconfig */,
+				BEA670A70E02DD604334CDF9 /* Pods-PeopleApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0ADB0DE1216F30B600F33221 /* PeopleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ADB0E0D216F30B700F33221 /* Build configuration list for PBXNativeTarget "PeopleApp" */;
+			buildPhases = (
+				DD14D82B8F75246422D5A43A /* [CP] Check Pods Manifest.lock */,
+				0ADB0DDE216F30B600F33221 /* Sources */,
+				0ADB0DDF216F30B600F33221 /* Frameworks */,
+				0ADB0DE0216F30B600F33221 /* Resources */,
+				61A395729C361D6F98DD3FCC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeopleApp;
+			productName = PeopleApp;
+			productReference = 0ADB0DE2216F30B600F33221 /* PeopleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0ADB0DF8216F30B600F33221 /* PeopleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ADB0E10216F30B700F33221 /* Build configuration list for PBXNativeTarget "PeopleAppTests" */;
+			buildPhases = (
+				0ADB0DF5216F30B600F33221 /* Sources */,
+				0ADB0DF6216F30B600F33221 /* Frameworks */,
+				0ADB0DF7216F30B600F33221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ADB0DFB216F30B600F33221 /* PBXTargetDependency */,
+			);
+			name = PeopleAppTests;
+			productName = PeopleAppTests;
+			productReference = 0ADB0DF9216F30B600F33221 /* PeopleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0ADB0E03216F30B600F33221 /* PeopleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ADB0E13216F30B700F33221 /* Build configuration list for PBXNativeTarget "PeopleAppUITests" */;
+			buildPhases = (
+				0ADB0E00216F30B600F33221 /* Sources */,
+				0ADB0E01216F30B600F33221 /* Frameworks */,
+				0ADB0E02216F30B600F33221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ADB0E06216F30B700F33221 /* PBXTargetDependency */,
+			);
+			name = PeopleAppUITests;
+			productName = PeopleAppUITests;
+			productReference = 0ADB0E04216F30B700F33221 /* PeopleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0ADB0DDA216F30B600F33221 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Apple Inc.";
+				TargetAttributes = {
+					0ADB0DE1216F30B600F33221 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					0ADB0DF8216F30B600F33221 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0ADB0DE1216F30B600F33221;
+					};
+					0ADB0E03216F30B600F33221 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0ADB0DE1216F30B600F33221;
+					};
+				};
+			};
+			buildConfigurationList = 0ADB0DDD216F30B600F33221 /* Build configuration list for PBXProject "PeopleApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0ADB0DD9216F30B600F33221;
+			productRefGroup = 0ADB0DE3216F30B600F33221 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0ADB0DE1216F30B600F33221 /* PeopleApp */,
+				0ADB0DF8216F30B600F33221 /* PeopleAppTests */,
+				0ADB0E03216F30B600F33221 /* PeopleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ADB0DE0216F30B600F33221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE00E172175B4A3004A00FF /* Lato-Light.ttf in Resources */,
+				0AE00E142175B4A3004A00FF /* Lato-Heavy.ttf in Resources */,
+				0ADB0E1E216F52DF00F33221 /* LoginPage.xib in Resources */,
+				0AE00E1B2175B4A3004A00FF /* Lato-Regular.ttf in Resources */,
+				0ADB0DF3216F30B600F33221 /* LaunchScreen.storyboard in Resources */,
+				0AE00E1C2175B4A3004A00FF /* Lato-Semibold.ttf in Resources */,
+				0AE00E202175B4A3004A00FF /* OFL.txt in Resources */,
+				0AE00E0F2175B4A3004A00FF /* Lato-BlackItalic.ttf in Resources */,
+				0AE00E112175B4A3004A00FF /* Lato-BoldItalic.ttf in Resources */,
+				0A201E742170C16C0091F5E0 /* JobPostCollectionViewCell.xib in Resources */,
+				0ADB0DF0216F30B600F33221 /* Assets.xcassets in Resources */,
+				0AE00E152175B4A3004A00FF /* Lato-HeavyItalic.ttf in Resources */,
+				0AE00E1A2175B4A3004A00FF /* Lato-MediumItalic.ttf in Resources */,
+				0AE00E162175B4A3004A00FF /* Lato-Italic.ttf in Resources */,
+				0AE00E212175B4A3004A00FF /* README.txt in Resources */,
+				0AE00E132175B4A3004A00FF /* Lato-HairlineItalic.ttf in Resources */,
+				0AE00E182175B4A3004A00FF /* Lato-LightItalic.ttf in Resources */,
+				0AE00E1E2175B4A3004A00FF /* Lato-Thin.ttf in Resources */,
+				0AE00E192175B4A3004A00FF /* Lato-Medium.ttf in Resources */,
+				0AE00E1F2175B4A3004A00FF /* Lato-ThinItalic.ttf in Resources */,
+				0AE00E122175B4A3004A00FF /* Lato-Hairline.ttf in Resources */,
+				0AE00E0E2175B4A3004A00FF /* Lato-Black.ttf in Resources */,
+				0ADB0DEB216F30B600F33221 /* Main.storyboard in Resources */,
+				0AD93B7B217EF6DA00D916D3 /* LoadingCollectionViewCell.xib in Resources */,
+				0AE00E102175B4A3004A00FF /* Lato-Bold.ttf in Resources */,
+				0AE00E1D2175B4A3004A00FF /* Lato-SemiboldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADB0DF7216F30B600F33221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADB0E02216F30B600F33221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61A395729C361D6F98DD3FCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PeopleApp/Pods-PeopleApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Popover/Popover.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Popover.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PeopleApp/Pods-PeopleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD14D82B8F75246422D5A43A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeopleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ADB0DDE216F30B600F33221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8F0AF3217496CF00A5D497 /* JobPostModel.swift in Sources */,
+				0ADB0DEE216F30B600F33221 /* PeopleApp.xcdatamodeld in Sources */,
+				0ADDE0102180815B009F855B /* AddJobPostViewController.swift in Sources */,
+				0A8F0AF021745A5E00A5D497 /* Constants.swift in Sources */,
+				0A93101B2175D10000EFDC37 /* DBManager.swift in Sources */,
+				0ADB0E1A216F311200F33221 /* UIHelper.swift in Sources */,
+				0ADB0E20216F878400F33221 /* JobPostCollectionViewController.swift in Sources */,
+				0A201E70217087430091F5E0 /* JobPostCollectionViewController+Extension.swift in Sources */,
+				0ADB0DE8216F30B600F33221 /* LoginViewController.swift in Sources */,
+				0A97154B217DFEB100980066 /* HiringJobPostDataModel.swift in Sources */,
+				0A201E722170C14E0091F5E0 /* JobPostCollectionViewCell.swift in Sources */,
+				0ADB0E1C216F52C500F33221 /* LoginPage.swift in Sources */,
+				0ADB0DE6216F30B600F33221 /* AppDelegate.swift in Sources */,
+				0AD93B79217EF5DB00D916D3 /* LoadingCollectionViewCell.swift in Sources */,
+				0A201E6E217080770091F5E0 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADB0DF5216F30B600F33221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADB0DFE216F30B600F33221 /* PeopleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ADB0E00216F30B600F33221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADB0E09216F30B700F33221 /* PeopleAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ADB0DFB216F30B600F33221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ADB0DE1216F30B600F33221 /* PeopleApp */;
+			targetProxy = 0ADB0DFA216F30B600F33221 /* PBXContainerItemProxy */;
+		};
+		0ADB0E06216F30B700F33221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ADB0DE1216F30B600F33221 /* PeopleApp */;
+			targetProxy = 0ADB0E05216F30B700F33221 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0ADB0DE9216F30B600F33221 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ADB0DEA216F30B600F33221 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0ADB0DF1216F30B600F33221 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ADB0DF2216F30B600F33221 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0ADB0E0B216F30B700F33221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0ADB0E0C216F30B700F33221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0ADB0E0E216F30B700F33221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8977E1E36F5495737931DFF /* Pods-PeopleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA9MN6BHWV;
+				INFOPLIST_FILE = PeopleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pratik-Zanjurne.PeopleApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0ADB0E0F216F30B700F33221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA670A70E02DD604334CDF9 /* Pods-PeopleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA9MN6BHWV;
+				INFOPLIST_FILE = PeopleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pratik-Zanjurne.PeopleApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0ADB0E11216F30B700F33221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA9MN6BHWV;
+				INFOPLIST_FILE = PeopleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pratik-Zanjurne.PeopleAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleApp.app/PeopleApp";
+			};
+			name = Debug;
+		};
+		0ADB0E12216F30B700F33221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA9MN6BHWV;
+				INFOPLIST_FILE = PeopleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pratik-Zanjurne.PeopleAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleApp.app/PeopleApp";
+			};
+			name = Release;
+		};
+		0ADB0E14216F30B700F33221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA9MN6BHWV;
+				INFOPLIST_FILE = PeopleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pratik-Zanjurne.PeopleAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeopleApp;
+			};
+			name = Debug;
+		};
+		0ADB0E15216F30B700F33221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YA9MN6BHWV;
+				INFOPLIST_FILE = PeopleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pratik-Zanjurne.PeopleAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeopleApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ADB0DDD216F30B600F33221 /* Build configuration list for PBXProject "PeopleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADB0E0B216F30B700F33221 /* Debug */,
+				0ADB0E0C216F30B700F33221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ADB0E0D216F30B700F33221 /* Build configuration list for PBXNativeTarget "PeopleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADB0E0E216F30B700F33221 /* Debug */,
+				0ADB0E0F216F30B700F33221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ADB0E10216F30B700F33221 /* Build configuration list for PBXNativeTarget "PeopleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADB0E11216F30B700F33221 /* Debug */,
+				0ADB0E12216F30B700F33221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ADB0E13216F30B700F33221 /* Build configuration list for PBXNativeTarget "PeopleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADB0E14216F30B700F33221 /* Debug */,
+				0ADB0E15216F30B700F33221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0ADB0DEC216F30B600F33221 /* PeopleApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0ADB0DED216F30B600F33221 /* PeopleApp.xcdatamodel */,
+			);
+			currentVersion = 0ADB0DED216F30B600F33221 /* PeopleApp.xcdatamodel */;
+			path = PeopleApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0ADB0DDA216F30B600F33221 /* Project object */;
+}

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GeezaPro.ttc">
+            <string>GeezaPro</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JobPostCollectionViewCell" id="Pqh-Oj-Tfz" customClass="JobPostCollectionViewCell" customModule="PeopleApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="146"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ax3-np-lLy">
+                        <rect key="frame" x="0.0" y="0.0" width="337" height="108"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Junior web designer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTB-zu-l9Z">
+                                <rect key="frame" x="42" y="11" width="152.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIR-au-uuk">
+                                <rect key="frame" x="10.5" y="10" width="15" height="21.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mumbai,Pune" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLB-Xe-cCD">
+                                <rect key="frame" x="35.5" y="51.5" width="78" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place" translatesAutoresizingMaskIntoConstraints="NO" id="AcJ-kb-vk1">
+                                <rect key="frame" x="14" y="53.5" width="8" height="10"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="office-briefcase" translatesAutoresizingMaskIntoConstraints="NO" id="g3M-oB-5Fm">
+                                <rect key="frame" x="11.5" y="78" width="11" height="11"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNz-NF-KT9">
+                                <rect key="frame" x="35.5" y="75" width="42.5" height="14"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="12"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.5 Lakhs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fk-jy-R01">
+                                <rect key="frame" x="226" y="51.5" width="52" height="15.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="12"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schedule" translatesAutoresizingMaskIntoConstraints="NO" id="3Jb-G0-Tc6">
+                                <rect key="frame" x="203.5" y="53.5" width="9.5" height="11.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange_circle" translatesAutoresizingMaskIntoConstraints="NO" id="wc7-EW-egI">
+                                <rect key="frame" x="294" y="8.5" width="33" height="32.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBy-Db-8pX">
+                                <rect key="frame" x="302" y="15" width="18" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UBy-Db-8pX" firstAttribute="leading" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="291:325" id="1pT-mI-7qI"/>
+                            <constraint firstItem="hIR-au-uuk" firstAttribute="bottom" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="31:109" id="2CR-VS-XHO"/>
+                            <constraint firstItem="xNz-NF-KT9" firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="75:325" id="5lA-fb-gPC"/>
+                            <constraint firstItem="5Fk-jy-R01" firstAttribute="bottom" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="67:109" id="8Gv-q0-lB7"/>
+                            <constraint firstItem="5Fk-jy-R01" firstAttribute="leading" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="218:325" id="9vw-AI-yfX"/>
+                            <constraint firstItem="wc7-EW-egI" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="9:109" id="DLj-Cw-U34"/>
+                            <constraint firstItem="xNz-NF-KT9" firstAttribute="leading" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="34:325" id="Doz-hA-yIW"/>
+                            <constraint firstItem="xNz-NF-KT9" firstAttribute="bottom" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="90:109" id="Dy1-i7-xeF"/>
+                            <constraint firstItem="AcJ-kb-vk1" firstAttribute="leading" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="13:325" id="E7U-Ah-OV0"/>
+                            <constraint firstItem="MTB-zu-l9Z" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="11:109" id="FpD-FC-dUr"/>
+                            <constraint firstItem="hIR-au-uuk" firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="24.13:325" id="Gzn-9d-5mi"/>
+                            <constraint firstItem="UBy-Db-8pX" firstAttribute="bottom" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="34:109" id="JM8-as-fhS"/>
+                            <constraint firstItem="MTB-zu-l9Z" firstAttribute="leading" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="40:325" id="KFZ-QX-S3C"/>
+                            <constraint firstItem="hIR-au-uuk" firstAttribute="leading" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="10.13:325" id="KSS-DM-b7x"/>
+                            <constraint firstItem="hIR-au-uuk" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="10:109" id="MGe-fb-50F"/>
+                            <constraint firstItem="3Jb-G0-Tc6" firstAttribute="bottom" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="66:109" id="NVS-3V-uYf"/>
+                            <constraint firstItem="3Jb-G0-Tc6" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="53:109" id="ONn-d1-CO3"/>
+                            <constraint firstItem="g3M-oB-5Fm" firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="22.14:325" id="Q9g-QO-SlR"/>
+                            <constraint firstItem="MTB-zu-l9Z" firstAttribute="bottom" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="30:109" id="QUE-bF-LIz"/>
+                            <constraint firstItem="UBy-Db-8pX" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="16:109" id="Sl2-7M-9K0"/>
+                            <constraint firstItem="MTB-zu-l9Z" firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="188:325" id="TA6-bd-Qis"/>
+                            <constraint firstItem="g3M-oB-5Fm" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="78:109" id="Twx-3G-sRF"/>
+                            <constraint firstItem="wc7-EW-egI" firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="315:325" id="VDB-vL-uM1"/>
+                            <constraint firstItem="wLB-Xe-cCD" firstAttribute="leading" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="34:325" id="Xtr-m2-egg"/>
+                            <constraint firstItem="wLB-Xe-cCD" firstAttribute="bottom" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="67:109" id="ak3-Wi-wrq"/>
+                            <constraint firstItem="5Fk-jy-R01" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="52:109" id="bjJ-Rl-eZe"/>
+                            <constraint firstItem="UBy-Db-8pX" firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="308:325" id="cRw-mW-sNt"/>
+                            <constraint firstItem="g3M-oB-5Fm" firstAttribute="leading" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="11:325" id="cx0-Zh-LPH"/>
+                            <constraint firstItem="3Jb-G0-Tc6" firstAttribute="leading" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="196:325" id="fsL-EP-GMk"/>
+                            <constraint firstItem="g3M-oB-5Fm" firstAttribute="bottom" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="89:109" id="hJH-W5-0X4"/>
+                            <constraint firstItem="xNz-NF-KT9" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="75:109" id="jNF-OL-JYC"/>
+                            <constraint firstItem="wc7-EW-egI" firstAttribute="bottom" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="41:109" id="mps-dl-1kY"/>
+                            <constraint firstItem="AcJ-kb-vk1" firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="20.45:325" id="sEI-h3-2vy"/>
+                            <constraint firstItem="3Jb-G0-Tc6" firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="206.31:325" id="sxQ-V7-0RM"/>
+                            <constraint firstItem="AcJ-kb-vk1" firstAttribute="bottom" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="64:109" id="t9r-u2-bcK"/>
+                            <constraint firstItem="wLB-Xe-cCD" firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="110:325" id="uMg-61-2lP"/>
+                            <constraint firstItem="wc7-EW-egI" firstAttribute="leading" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="283:325" id="v6c-LJ-Leg"/>
+                            <constraint firstItem="5Fk-jy-R01" firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" multiplier="268:325" id="wLM-13-ICT"/>
+                            <constraint firstItem="wLB-Xe-cCD" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="52:109" id="yAb-lA-XnC"/>
+                            <constraint firstItem="AcJ-kb-vk1" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" multiplier="53:109" id="ypd-B1-s6W"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9y-PO-SmK">
+                        <rect key="frame" x="0.0" y="108" width="337" height="38"/>
+                        <color key="backgroundColor" red="0.83203787939999996" green="0.83203787939999996" blue="0.83203787939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ax3-np-lLy" secondAttribute="trailing" id="7dB-b6-w3m"/>
+                <constraint firstItem="M9y-PO-SmK" firstAttribute="top" secondItem="Ax3-np-lLy" secondAttribute="bottom" id="TTW-04-3Q9"/>
+                <constraint firstItem="Ax3-np-lLy" firstAttribute="top" secondItem="Pqh-Oj-Tfz" secondAttribute="top" id="ZMD-xV-AOl"/>
+                <constraint firstItem="Ax3-np-lLy" firstAttribute="leading" secondItem="Pqh-Oj-Tfz" secondAttribute="leading" id="g55-fH-lnW"/>
+                <constraint firstAttribute="bottom" secondItem="M9y-PO-SmK" secondAttribute="bottom" id="kXV-vB-yZE"/>
+                <constraint firstAttribute="trailing" secondItem="M9y-PO-SmK" secondAttribute="trailing" id="laF-CZ-Or0"/>
+                <constraint firstItem="M9y-PO-SmK" firstAttribute="top" secondItem="Pqh-Oj-Tfz" secondAttribute="bottom" multiplier="111:150" id="s1H-kA-Qfh"/>
+                <constraint firstItem="M9y-PO-SmK" firstAttribute="leading" secondItem="Pqh-Oj-Tfz" secondAttribute="leading" id="wEm-bP-iwE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="NOL-5A-aMz"/>
+            <size key="customSize" width="369" height="326"/>
+            <connections>
+                <outlet property="bottomFuncView" destination="M9y-PO-SmK" id="qXu-nJ-Mrc"/>
+                <outlet property="jobTitleLbl" destination="MTB-zu-l9Z" id="UVF-x5-y2q"/>
+                <outlet property="locationLbl" destination="wLB-Xe-cCD" id="Czp-Q9-Oef"/>
+                <outlet property="salaryLbl" destination="5Fk-jy-R01" id="Ky0-tk-wNa"/>
+                <outlet property="workExperienceLbl" destination="xNz-NF-KT9" id="u6B-F6-3an"/>
+            </connections>
+            <point key="canvasLocation" x="-27.5" y="107"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="office-briefcase" width="13" height="10"/>
+        <image name="orange_circle" width="35" height="35"/>
+        <image name="place" width="8" height="10"/>
+        <image name="schedule" width="16" height="16"/>
+        <image name="title" width="14" height="21"/>
+    </resources>
+</document>

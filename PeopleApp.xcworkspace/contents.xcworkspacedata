@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Lato2OFL"
+      name = "Lato2OFL">
+      <FileRef
+         location = "group:Lato-Black.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-BlackItalic.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-Bold.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-BoldItalic.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-Hairline.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-HairlineItalic.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-Heavy.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-HeavyItalic.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-Italic.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-Light.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-LightItalic.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-Medium.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-MediumItalic.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-Regular.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-Semibold.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-SemiboldItalic.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-Thin.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:Lato-ThinItalic.ttf">
+      </FileRef>
+      <FileRef
+         location = "group:OFL.txt">
+      </FileRef>
+      <FileRef
+         location = "group:README.txt">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:PeopleApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
